@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-closure-compiler --js clone-range-dom-3.js --js_output_file bookmarklet.js
+closure-compiler --js index.js --js_output_file bookmarklet.js
 
 head="javascript:(function(){"
 tail="})()"
