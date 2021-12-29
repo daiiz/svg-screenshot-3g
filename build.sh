@@ -1,8 +1,7 @@
 #!/bin/sh
 set -eu
 
-closure-compiler --js src/index.js --js_output_file out/bookmarklet.js
-
+closure-compiler --js src/*.js --js_output_file out/bookmarklet.js
 head="javascript:(function(){"
 tail="})()"
 

@@ -1,10 +1,5 @@
 // from https://github.com/TheTeamJ/tiny-svg-screenshot/pull/64
 
-const PADDING = 8
-const PREVEW_MARGIN = 0
-const PREVEW_PADDING = 8
-const ESC = 27
-
 function createStyleNode(node, markName) {
   const camelToKebabCase = (str) => {
     return str.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)

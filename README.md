@@ -4,5 +4,5 @@
 
 ```
 $ brew install closure-compiler
-$ sh build.sh
+$ npm run build
 ```

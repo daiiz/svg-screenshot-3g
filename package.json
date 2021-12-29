@@ -1,0 +1,20 @@
+{
+  "name": "svg-screenshot-3g",
+  "version": "1.0.0",
+  "description": "SVG Screenshot 3rd generation",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "sh build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daiiz/svg-screenshot-3g.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daiiz/svg-screenshot-3g/issues"
+  },
+  "homepage": "https://github.com/daiiz/svg-screenshot-3g#readme",
+  "private": true
+}
