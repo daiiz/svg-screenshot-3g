@@ -351,7 +351,6 @@ class CloneRangeDom {
         wrappr.appendChild(node)
       }
     }
-    // console.log("---->", rootMarkerCounter)
     return [wrappr, rootMarkerCounter]
   }
 
@@ -453,7 +452,6 @@ class CloneRangeDom {
     const minMarginTop = Math.min(...marginTops)
     let diffMarginTop = 0
     if (minMarginTop < 0) {
-      // console.log('>>', marginTops, minMarginTop)
       diffMarginTop = -1 * minMarginTop + 2 * PADDING
     }
 
@@ -494,9 +492,6 @@ class CloneRangeDom {
         width: cropRect.width + 2 * PADDING,
         height: cropRect.height + 2 * PADDING,
       }
-      // console.log('size:', size)
-      // console.log('tmpDivSize:', tmpDivSize)
-      // console.log('viewport:', viewport)
       // Close tag
       // https://www.w3.org/TR/REC-html40/index/elements.html
       const svgStr = generateSvgStr(domshot, viewport).replace(
