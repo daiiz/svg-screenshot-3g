@@ -48,6 +48,7 @@ function generateSvgStr(domshot, viewport) {
   const w = viewport.width
   const h = viewport.height
   const viewportStr = `${viewport.x} ${viewport.y} ${w} ${h}`
+  const baseUrl = window.location.origin + window.location.pathname
   const svgLines = [
     `<svg width="${w}" height="${h}" viewBox="${viewportStr}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">`,
     `  <foreignObject x="0" y="0" width="${
@@ -55,7 +56,7 @@ function generateSvgStr(domshot, viewport) {
     }" height="${h + PREVEW_PADDING + viewport.y}">`,
     '  <html xmlns="http://www.w3.org/1999/xhtml">',
     '  <head>',
-    `    <base href="${window.location.href}" />`,
+    `    <base href="${baseUrl}" />`,
     '  </head>',
     '  <div class="body">',
     `    <style>`,
